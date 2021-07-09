@@ -1,0 +1,9 @@
+<div xmlns:th = "http://www.thymeleaf.org" style="border: 1px solid #ccc;">
+  <a th:href="@{/}">Home</a>
+  <br/>
+  <a th:href="@{/userInfoPage.html}">User Info</a>
+  <br/>
+  <a th:href="@{/admin}">Admin</a>
+  <br/>
+  <a th:if="${#request.userPrincipal!=null}" th:href="@{/logout}">Logout</a>
+</div>
